@@ -122,7 +122,7 @@
    			<form name="form1" method="post" action="<c:url value="product_detail_do"/>">
             	<input type="hidden" name="pr_no" value="${pr_vo.pr_no}">
                 <!-- 상품코드를 히든타입으로 넘김 -->
-                <select name="amount">
+                <select name="count">
                 	<c:forEach begin="1" end="10" var="count">
                 		<option value="${count}">${count}</option>
                 		<!-- 장바구니에  10개 까지 담을수 있다.-->
