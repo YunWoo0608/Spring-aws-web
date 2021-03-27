@@ -235,13 +235,8 @@
              <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-<<<<<<< HEAD
                 <version>3.0.5</version>
-=======
-	        <version>3.8.1</version>
->>>>>>> branch 'master' of https://github.com/YunWooCheoi/Spring-aws-web.git
                 <configuration>
-<<<<<<< HEAD
                     <archive>
                         <manifest>
                        	    <mainclass>com.homeshopping.myapp.shopping.controller.ShoppingController</mainclass>
@@ -249,19 +244,10 @@
                     </archive>
                     <source>11</source>
                     <target>11</target>
-=======
-		    <source>1.8</source>
-                    <target>1.8</target>
->>>>>>> branch 'master' of https://github.com/YunWooCheoi/Spring-aws-web.git
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
-	            <archive>
-                        <manifest>
-                            <mainclass>com.homeshopping.myapp.shopping.controller.ShoppingController</mainclass>
-                        </manifest>
-                    </archive>
-	    </configuration>
+                </configuration>
             </plugin> 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>

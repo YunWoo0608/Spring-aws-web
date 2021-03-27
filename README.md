@@ -57,4 +57,4 @@ DB :  MySQL
 
 ![image](https://user-images.githubusercontent.com/56060421/112716548-602ea480-8f2a-11eb-8e19-586adb25237f.png)
 
-
+[![Build Status](https://travis-ci.com/YunWooCheoi/Spring-aws-web.svg?branch=master)](https://travis-ci.com/YunWooCheoi/Spring-aws-web)
