@@ -10,6 +10,22 @@ branches:
 cache:
   directories:
     - $HOME/.m2
+before_deploy:
+  - zip -r spring-maven-webservice *
+  - mkdir -p deploy
+  - mv spring-maven-webservice.zip deploy/spring-maven-webservice.zip
+# CodeDeploy는 Jar파일을 인식하지 못하므로 zip파일로 압축한다.
+
+deploy:
+  - provider: s3
+    access_key_id: AKIA6L54DEAOJJP74GLY
+    secret_access_key: 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
+    bucket: spring-web-build-travis
+    region: ap-northeast-2
+    skip_cleanup: true
+    acl: private
+    local_dir: deploy
+    wait-until-deployed: true
 
 # CI 실행 완료시 메일로 알람
 notifications:
