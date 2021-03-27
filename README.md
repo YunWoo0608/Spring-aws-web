@@ -1,9 +1,9 @@
 # Spring-aws-web
 Spring-aws-web
 
-개발 환경 : Window, Linux
-개발 툴 : Ecliplse, Travis CI/CD, Git
-개발 프레임워크 : Spring FrameWork
+개발 환경 : Window, Linux </br>
+개발 툴 : Ecliplse, Travis CI/CD, Git </br>
+개발 프레임워크 : Spring FrameWork </br>
 사용언어 : java, jsp, javaScript, jQuery
 DB :  MySQL 
 
