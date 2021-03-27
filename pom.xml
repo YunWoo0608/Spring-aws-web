@@ -200,6 +200,11 @@
 		  	<version>1.1.2</version> 
 		</dependency>
 
+		<dependency>
+    			<groupId>org.apache.maven.plugins</groupId>
+	    		<artifactId>maven-resources-plugin</artifactId>
+	    		<version>3.0.5</version>
+		</dependency>
 		<!-- Test -->
 		<dependency>
 			<groupId>junit</groupId>
@@ -235,9 +240,9 @@
              <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.5.1</version>
+	        <version>3.0.5</version>
                 <configuration>
-                    <source>11</source>
+		    <source>11</source>
                     <target>11</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
