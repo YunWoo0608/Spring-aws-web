@@ -242,7 +242,12 @@
                     <compilerArgument>-Xlint:all</compilerArgument>
                     <showWarnings>true</showWarnings>
                     <showDeprecation>true</showDeprecation>
-                </configuration>
+	            <archive>
+                        <manifest>
+                            <mainclass>com.homeshopping.myapp.shopping.controller.ShoppingController</mainclass>
+                        </manifest>
+                    </archive>
+	    </configuration>
             </plugin> 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
