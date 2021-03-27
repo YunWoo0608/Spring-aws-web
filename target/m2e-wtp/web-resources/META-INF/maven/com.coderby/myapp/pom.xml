@@ -237,6 +237,11 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.0.5</version>
                 <configuration>
+                    <archive>
+                        <manifest>
+                       	    <mainclass>com.homeshopping.myapp.shopping.controller.ShoppingController</mainclass>
+                        </manifest>
+                    </archive>
                     <source>11</source>
                     <target>11</target>
                     <compilerArgument>-Xlint:all</compilerArgument>
