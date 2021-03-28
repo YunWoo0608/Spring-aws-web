@@ -1,6 +1,8 @@
 # Spring-aws-web
 Spring-aws-web
 
+[![Build Status](https://travis-ci.com/YunWooCheoi/Spring-aws-web.svg?branch=master)](https://travis-ci.com/YunWooCheoi/Spring-aws-web)
+
 개발 환경 : Window, Linux </br>
 개발 툴 : Ecliplse, Travis CI/CD, Git </br>
 개발 프레임워크 : Spring FrameWork </br>
@@ -59,4 +61,3 @@ http://ec2-3-36-238-141.ap-northeast-2.compute.amazonaws.com:8080/
 
 ![image](https://user-images.githubusercontent.com/56060421/112716548-602ea480-8f2a-11eb-8e19-586adb25237f.png)
 
-[![Build Status](https://travis-ci.com/YunWooCheoi/Spring-aws-web.svg?branch=master)](https://travis-ci.com/YunWooCheoi/Spring-aws-web)
