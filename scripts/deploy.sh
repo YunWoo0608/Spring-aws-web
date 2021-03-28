@@ -6,7 +6,7 @@ WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps
 
 echo "> Build 파일 복사 "
 
-sudo cp $REPOSITORY/target/*.war $WEBREPOSITORY
+sudo cp $REPOSITORY/*.war $WEBREPOSITORY
 
 echo "> 현재 구동중인 애플리케이션 pid 확인 "
 
