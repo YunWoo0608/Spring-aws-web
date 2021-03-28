@@ -1,6 +1,6 @@
 version: 0.0
 os: linux
 files:
-  -source: /home/ec2-user/app/step5/Spring-aws-web/
+  - source: /
   destination: /home/ec2-user/app/test/zip/
   overwrite: yes
