@@ -34,7 +34,7 @@ deploy:
     key: spring-maven-webservice # travis 와 다른게 확장자 제거
     bundle_type: zip
     application: spring-web-codeDeploy
-    deployment_group: spring-web-codeDeploy-group
+    deployment-group: spring-web-codeDeploy-group
     region: ap-northeast-2
     wait-until-deployed: true
 
