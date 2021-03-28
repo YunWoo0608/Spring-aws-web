@@ -34,6 +34,7 @@ deploy:
     baundel_type: zip
     application-name: spring-web-codeDeploy
     deployment-group: spring-web-codeDeploy-group
+    deployment-config: CodeDeployDefault.AllAtOnce
     region: ap-northeast-2
     wait-until-deployed: true
 
