@@ -1,5 +1,6 @@
 # Spring-aws-web
-Spring-aws-web
+
+#Travis CI 사용 
 
 [![Build Status](https://travis-ci.com/YunWooCheoi/Spring-aws-web.svg?branch=master)](https://travis-ci.com/YunWooCheoi/Spring-aws-web)
 
@@ -15,7 +16,7 @@ DB :  MySQL
  
  해당 코드들은 AWS에 연동되어 배포됩니다. Travis와 git , AWS codeDploy로 연동해서 배포 및 실행하고 있습니다. 
  
- Spring 프로젝트를 maven으로 build 해서 배포하고 외장 톰캣으로 war 파일로 실행됩니다. 해당 과정은 스크립트와 함꼐 git에 push 됨과 동시에 travis에서 build 되어 AWS s3에 배포 되고 s3에서 ec2로 다시 배포되어 ec2의 톰캣에서 실행되게 됩니다. 
+ Spring 프로젝트를 travis에서 maven으로 build 해서 배포하고 외장 톰캣으로 war 파일로 실행됩니다. 해당 과정은 스크립트와 함꼐 git에 push 됨과 동시에 travis에서 build 되어 AWS s3에 배포 되고 s3에서 ec2로 다시 배포되어 ec2의 톰캣에서 실행되게 됩니다. 
  
  # AWS 연동된 EC2 주소
  
