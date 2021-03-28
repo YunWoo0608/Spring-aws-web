@@ -26,6 +26,16 @@ deploy:
     acl: private
     local_dir: deploy
     wait-until-deployed: true
+  - provider :  codedeploy
+    access_key_id:  AKIA6L54DEAOJJP74GLY
+    secret_access_key:  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	
+    bucket:  spring-web-build-travis
+    key:  spring-maven-webservice.zip	
+    baundel_type:  zip
+    application:  spring-web-codeDeploy
+    deployment_group:  spring-web-codeDeploy-group
+    region:  ap-northeast-2
+    wait-until-deployed:  true
 
 # CI 실행 완료시 메일로 알람
 notifications:
