@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- login Page -->
-    <title>EPLANE - Log-in</title>
+    <title>Log-in</title>
 
     <!-- css -->
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -66,7 +66,7 @@ if((String)session.getAttribute("sID") != null)
             <!-- 가입 버튼 -->
             <div class="row">
             <div class="text-right" style="padding: 10px 30px;">
-              <a href="<c:url value='sign_up'/>">가입하기</a>
+              <a href="#">가입하기</a>
             </div>
             </div>
 						</form>

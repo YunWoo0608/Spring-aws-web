@@ -44,7 +44,7 @@
  			<!--<h4>로그인/회원가입/고객센터 로그인후 -> 마이페이지/로그아웃/고객센터 , 관리자 로그인 후 -> 관리자페이지/로그아웃</h4>  -->
  			<div id="login_text" class="pull-right" >
  				<% if(session.getAttribute("sID") == null){ %>
- 				<a href="<c:url value='login'/>">로그인</a>/<a href="<c:url value='sign_up'/>">회원가입</a>/<a href='#'>고객센터</a>
+ 				<a href="<c:url value='login'/>">로그인</a>/<a href="#">회원가입</a>/<a href='#'>고객센터</a>
  				<%}else{ %>
  				<a href="<c:url value='logout'/>">로그아웃</a>/<a href="<c:url value='pay_list'/>">결제내역보기</a>/<a href='#'>고객센터</a>
  				<%}%>
