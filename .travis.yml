@@ -26,12 +26,13 @@ deploy:
     acl: private
     local_dir: deploy
     wait-until-deployed: true
+
   - provider : codedeploy
     access_key_id: AKIA6L54DEAOJJP74GLY
     secret_access_key: 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	
-    bundel-bucket: spring-web-build-travis
+    bundle-bucket: spring-web-build-travis
     bundle-key: spring-maven-webservice # travis 와 다른게 확장자 제거
-    baundel_type: zip
+    bundle_type: zip
     application-name: spring-web-codeDeploy
     deployment-group: spring-web-codeDeploy-group
     deployment-config: CodeDeployDefault.AllAtOnce
