@@ -25,7 +25,7 @@ http://ec2-3-36-238-141.ap-northeast-2.compute.amazonaws.com:8080/
 2. 상품 리스트 나열
 3. 결제 기능 구현.
 
-# 로그인 기능 [ 오른쪽 상단의 로그인 선택 ]
+# 로그인 기능 [ 오른쪽 상단의 로그인 선택 ] , 로그인 ID : test PW : test (이외에는 막아놨습니다.)
 
 ![image](https://user-images.githubusercontent.com/56060421/112716315-f366da80-8f28-11eb-8423-f96644149cad.png)
 
