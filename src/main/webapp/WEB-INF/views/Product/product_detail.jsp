@@ -56,7 +56,8 @@
  				<% if(session.getAttribute("sID") == null){ %>
  				<a href="<c:url value='login'/>">로그인</a>/<a href="<c:url value='sign_up'/>">회원가입</a>/<a href='#'>고객센터</a>
  				<%}else{ %>
- 				<a href="<c:url value='logout'/>">로그아웃</a>/<a href="<c:url value='sign_up?'/>">회원가입</a>/<a href='#'>고객센터</a>
+<<<<<<< HEAD
+ 				<a href="<c:url value='logout'/>">로그아웃</a>/<a href="<c:url value='pay_list'/>">결제내역보기</a>/<a href='#'>고객센터</a>
  				<%}%>
  			</div>
         </div><!-- login-pannel -->

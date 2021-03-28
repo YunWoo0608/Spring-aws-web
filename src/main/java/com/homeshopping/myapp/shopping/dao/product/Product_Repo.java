@@ -6,14 +6,10 @@ import java.sql.SQLException;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
 import com.homeshopping.myapp.shopping.model.product.Product_VO;
-import com.mysql.cj.x.protobuf.MysqlxConnection.Close;
-import com.mysql.cj.xdevapi.PreparableStatement;
-import com.mysql.cj.xdevapi.Statement;
 
 @Repository
 public class Product_Repo implements IProduct_Repo {

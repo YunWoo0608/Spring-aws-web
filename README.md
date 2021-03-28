@@ -11,11 +11,13 @@ DB :  MySQL
 
  해당 웹 서비스는 결제 기능이 있는 간단한 사이트입니다. Spring 기반으로 MySQL과 연동하여 사용자의 정보, 상품 정보, 결제 정보를 담고 있습니다. 결제 모듈은 '이니시스' 입니다. 결제 후 오른쪽 상단의 결제 리스트에서 결제 된 항목들을 볼 수 있습니다.
  
- 해당 코드들은 AWS에 연동되어 배포됩니다. 사용하는 tool은 traivs를 사용하고, AWS의 CodeDelpoy를 사용해서 스크립트와 함께 자동 배포 및 실행을 하고 있습니다. 
+ 해당 코드들은 AWS에 연동되어 배포됩니다. Travis와 git , AWS codeDploy로 연동해서 배포 및 실행하고 있습니다. 
+ 
+ Spring 프로젝트를 maven으로 build 해서 배포하고 외장 톰캣으로 war 파일로 실행됩니다. 해당 과정은 스크립트와 함꼐 git에 push 됨과 동시에 travis에서 build 되어 AWS s3에 배포 되고 s3에서 ec2로 다시 배포되어 ec2의 톰캣에서 실행되게 됩니다. 
  
  # AWS 연동된 EC2 주소
  
-
+http://ec2-3-36-238-141.ap-northeast-2.compute.amazonaws.com:8080/
 
 # 구현 기능
 
