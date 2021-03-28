@@ -22,7 +22,7 @@ deploy:
     secret_access_key: pvYof9Z5BfoZF14aAILBHtLg2xZHcd/H0IzEoXB+
     bucket: spring-web-build-travis
     region: ap-northeast-2
-    skip_cleanup: true
+    cleanup: true
     acl: private
     local_dir: deploy
     wait-until-deployed: true
@@ -32,9 +32,9 @@ deploy:
     secret_access_key: pvYof9Z5BfoZF14aAILBHtLg2xZHcd/H0IzEoXB+	
     bucket: spring-web-build-travis
     key: spring-maven-webservice.zip # travis 와 다른게 확장자 제거
-    bundle-type: zip
+    bundle_type: zip
     application: spring-web-codeDeploy
-    deployment-group: spring-web-codeDeploy-group
+    deployment_group: spring-web-codeDeploy-group
     region: ap-northeast-2
     wait-until-deployed: true
 
