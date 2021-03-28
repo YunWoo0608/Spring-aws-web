@@ -12,8 +12,8 @@ cache:
     - $HOME/.m2
 before_deploy:
   - zip -r spring-maven-webservice *
-  - mkdir -p deploy
-  - mv spring-maven-webservice.zip deploy/spring-maven-webservice.zip
+  - sudo mkdir -p deploy
+  - sudo mv spring-maven-webservice.zip deploy/spring-maven-webservice.zip
 # CodeDeploy는 Jar파일을 인식하지 못하므로 zip파일로 압축한다.
 
 deploy:
