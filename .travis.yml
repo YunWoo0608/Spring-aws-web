@@ -31,7 +31,7 @@ deploy:
     access_key_id: AKIA6L54DEAOJJP74GLY
     secret_access_key: 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	
     bucket: spring-web-build-travis
-    key: spring-maven-webservice # travis 와 다른게 확장자 제거
+    key: spring-maven-webservice.zip # travis 와 다른게 확장자 제거
     bundle-type: zip
     application: spring-web-codeDeploy
     deployment-group: spring-web-codeDeploy-group
