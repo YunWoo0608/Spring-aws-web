@@ -107,9 +107,9 @@
       </div><!-- header -->
 
       <div id="main" class="container-fluid" style="padding-top: 100px;">
-      	<div id="product-img" class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+      	<div id="product-img" class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
       		<div id="sell_sector" class="pull-right" >
-      			<img src="http://placehold.it/300x300" width="300px" height="300px">
+      			<img src="http://placehold.it/300x300" width="300px" height="300px" style="padding-top: 50px;">
       		</div>
       	</div>
       	<div id="product-detail" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
