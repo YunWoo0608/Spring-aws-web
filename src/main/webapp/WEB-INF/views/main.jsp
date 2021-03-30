@@ -51,7 +51,7 @@
  			</div>
         </div><!-- login-pannel -->
         <div id ="left_logo" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-          <a href="<c:url value="/"/>"><img class="img-responsive" src="https://placehold.it/200x100" alt="left-logo"></a>
+          <a href="<c:url value="/"/>"><img class="img-responsive" src="http://placehold.it/200x100" alt="left-logo"></a>
         </div><!-- left-logo -->
         <div id ="main_search" class="form-inline col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <form role="form" name="main_search" action="" method="get">
