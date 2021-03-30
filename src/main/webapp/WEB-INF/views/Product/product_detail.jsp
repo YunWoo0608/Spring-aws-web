@@ -106,9 +106,9 @@
         </div><!-- navigation -->
       </div><!-- header -->
 
-      <div id="main" class="container-fluid" style="padding-top: 50px;">
+      <div id="main" class="container-fluid" style="padding-top: 100px;">
       	<div id="product-img" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      		<div class="sell_sector">
+      		<div class="sell_sector" style="text-align: center;">
       			<img src="http://placehold.it/300x300" width="300px" height="300px">
       		</div>
       	</div>
