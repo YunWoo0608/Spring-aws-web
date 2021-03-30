@@ -107,12 +107,12 @@
       </div><!-- header -->
 
       <div id="main" class="container-fluid" style="padding-top: 100px;">
-      	<div id="product-img" class="col-xs-4 col-sm-4 col-md-5 col-lg-5">
+      	<div id="product-img" class="col-xs-4 col-sm-4 col-md-5 col-lg-5" style="padding-top: 50px;">
       		<div id="sell_sector" class="pull-right" >
-      			<img src="http://placehold.it/300x300" width="300px" height="300px" style="padding-top: 50px;">
+      			<img src="http://placehold.it/300x300" width="300px" height="300px">
       		</div>
       	</div>
-      	<div id="product-detail" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      	<div id="product-detail" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top: 50px;">
       		<p >상품명</p>
    			<span>${pr_vo.pr_name}</span>
    			<p>가격</p>
