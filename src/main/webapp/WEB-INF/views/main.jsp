@@ -38,7 +38,7 @@
     <div id="root">
       <div id ="header">
         <div role="banner" id="top-banner">
-          <img class="img-responsive" src="https://placehold.it/2048x100" alt="top-banner">
+          <img class="img-responsive" src="http://placehold.it/2048x100" alt="top-banner">
         </div><!--top-banner -->
         <div id = "login_pannel" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
  			<!--<h4>로그인/회원가입/고객센터 로그인후 -> 마이페이지/로그아웃/고객센터 , 관리자 로그인 후 -> 관리자페이지/로그아웃</h4>  -->
