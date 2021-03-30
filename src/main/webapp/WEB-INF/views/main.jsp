@@ -98,7 +98,7 @@
 
       <div id="main" class="container-fluid">
       	  <div id="main_banner" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-          <div><a href="#"><img class="img-responsive"src="https://placehold.it/2048x400" alt=""></a></div>
+          <div><a href="#"><img class="img-responsive"src="http://placehold.it/2048x400" alt=""></a></div>
         </div>
         <!-- 빈영역 (col-push-2가 안먹힘) -->
         <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
@@ -110,10 +110,10 @@
             <div class="sell_sector">
             <c:forEach var="product" items="${prolist}">
               <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2">
-              <a href="<c:url value="/product_detail?pr_no=${product.pr_no}"/>"><img class="img-responsive" src="https://placehold.it/150x150"></a>
+              <a href="<c:url value="/product_detail?pr_no=${product.pr_no}"/>"><img class="img-responsive" src="http://placehold.it/150x150"></a>
               <span>${product.pr_name}</span></div>
              </c:forEach>
-              <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2"><img class="img-responsive" src="https://placehold.it/150x150">
+              <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2"><img class="img-responsive" src="http://placehold.it/150x150">
               <span>설명</span></div>
             </div>
           </div>
@@ -122,9 +122,9 @@
             <h4 class="main_sell">세일 상품</h4>
             <hr>
             <div class="sell_sector">
-              <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2"><img class="img-responsive" src="https://placehold.it/150x150">
+              <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2"><img class="img-responsive" src="http://placehold.it/150x150">
               <span>설명</span></div>
-              <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2"><img class="img-responsive" src="https://placehold.it/150x150">
+              <div class="col-xs-4 col-sm-4 col-md-2 col-lg-2"><img class="img-responsive" src="http://placehold.it/150x150">
               <span>설명</span></div>
             </div> <!-- sell_sector : 상품 판매 칸 -->
           </div> <!-- 상품 판매칸 전체 구역 div -->
