@@ -1,0 +1,23 @@
+FROM centos:7
+
+#app dir create
+RUN mkdir -p /app
+
+WORKDIR /app
+
+RUN yum -y update
+RUN yum -y install wget java-1.8.0-openjdk java-1.8.0-openjdk-devel
+RUN cd /root
+RUN wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz
+RUN tar -xzvf apache-tomcat-9.0.44.tar.gz
+RUN mkdir /usr/local/tomcat
+RUN mv apache-tomcat-9.0.44 /usr/local/tomcat/tomcat9
+RUN echo "export CTALINA_HOME=/usr/local/tomcat/tomcat9/" >> /root/.bash_profile
+RUN echo -e "PATH=$PATH:$JAVA_HOME/bin \n CLASSPATH=$JAVA_HOME/jre/lib:$JAVA_HOME/lib/tools.jar \n export PATH CLASSPATH" >> /root/.bash_profile
+RUN source /root/.bash_profile
+
+
+RUN echo -e "[Unit] \n Description=tomcat9 \n After=network.target syslog.target \n [Service] \n Type=forking \n Environment=JAVA_HOME= /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64/jre \n User=root \n Group=root \n ExecStart=/usr/local/tomcat/tomcat9/bin/startup.sh ExecStp=/usr/local/tomcat/tomcat9/bin/shutdown.sh \n UMask=007 \n RestartSec=10 \n Restart=always \n SuccessExitStatus=143 \n [Install]\n WantedBy=multi-user.target" >> /usr/lib/systemd/system/tomcat.service
+
+EXPOSE 8080
+
