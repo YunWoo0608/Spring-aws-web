@@ -14,7 +14,7 @@ sudo cp $REPOSITORY/*.war $CONTAINERREPO
 sudo cp $REPOSITORY/tomcat.sh $CONTAINERREPO
 
 echo "> Docker Scripts Start"
-sudo REPOSITORY/con_deploy.sh
+/bin/bash -c $REPOSITORY/con_deploy.sh
 
 echo "> 현재 구동중인 애플리케이션 pid 확인 "
 
