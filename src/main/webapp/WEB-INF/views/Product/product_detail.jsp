@@ -48,20 +48,20 @@
     <div id="root">
       <div id ="header">
         <div role="banner" id="top-banner">
-          <img class="img-responsive" src="https://placehold.it/2048x100" alt="top-banner">
+          <img class="img-responsive" src="http://placehold.it/2048x100" alt="top-banner">
         </div><!--top-banner -->
         <div id = "login_pannel" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
  			<!--<h4>로그인/회원가입/고객센터 로그인후 -> 마이페이지/로그아웃/고객센터 , 관리자 로그인 후 -> 관리자페이지/로그아웃</h4>  -->
  			<div id="login_text" class="pull-right" >
  				<% if(session.getAttribute("sID") == null){ %>
- 				<a href="<c:url value='login'/>">로그인</a>/<a href="<c:url value='sign_up'/>">회원가입</a>/<a href='#'>고객센터</a>
+ 				<a href="<c:url value='login'/>">로그인</a>/<a href="#">회원가입</a>/<a href='#'>고객센터</a>
  				<%}else{ %>
  				<a href="<c:url value='logout'/>">로그아웃</a>/<a href="<c:url value='pay_list'/>">결제내역보기</a>/<a href='#'>고객센터</a>
  				<%}%>
  			</div>
         </div><!-- login-pannel -->
         <div id ="left_logo" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-          <a href="<c:url value="/"/>"><img class="img-responsive" src="https://placehold.it/200x100" alt="left-logo"></a>
+          <a href="<c:url value="/"/>"><img class="img-responsive" src="http://placehold.it/200x100" alt="left-logo"></a>
         </div><!-- left-logo -->
         <div id ="main_search" class="form-inline col-xs-6 col-sm-6 col-md-6 col-lg-6">
           <form role="form" name="main_search" action="" method="get">
@@ -106,13 +106,13 @@
         </div><!-- navigation -->
       </div><!-- header -->
 
-      <div id="main" class="container-fluid" style="padding-top: 50px;">
-      	<div id="product-img" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-      		<div class="sell_sector">
-      			<img src="${path}/images/${dto.picture_url}" width="300px" height="300px">
+      <div id="main" class="container-fluid" style="padding-top: 100px;">
+      	<div id="product-img" class="col-xs-4 col-sm-4 col-md-5 col-lg-5" style="padding-top: 50px;">
+      		<div id="sell_sector" class="pull-right" >
+      			<img src="http://placehold.it/300x300" width="300px" height="300px">
       		</div>
       	</div>
-      	<div id="product-detail" class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+      	<div id="product-detail" class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top: 50px;">
       		<p >상품명</p>
    			<span>${pr_vo.pr_name}</span>
    			<p>가격</p>
