@@ -3,10 +3,14 @@
 REPOSITORY=/home/ec2-user/app/test/zip
 PROJECT_NAME=Spring-aws-web
 WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps
+CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
 
 echo "> Build 파일 복사 "
 
 sudo cp $REPOSITORY/*.war $WEBREPOSITORY
+
+echo "> 컨테이너 내부로 재배포 "
+sudo cp $REPOSITORY/* $CONTAINERREPO
 
 echo "> 현재 구동중인 애플리케이션 pid 확인 "
 
