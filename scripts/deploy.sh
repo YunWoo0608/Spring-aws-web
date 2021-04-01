@@ -13,7 +13,7 @@ echo "> 컨테이너 내부로 재배포 "
 sudo cp $REPOSITORY/*.war $CONTAINERREPO
 sudo cp $REPOSITORY/tomcat.sh $CONTAINERREPO
 
-echo "> Docker Scripts Start"
+echo "> Docker Scripts Start !"
 /bin/bash -c $REPOSITORY/con_deploy.sh
 
 echo "> 현재 구동중인 애플리케이션 pid 확인 "
