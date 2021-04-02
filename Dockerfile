@@ -6,7 +6,7 @@ RUN mkdir -p /app
 WORKDIR /app
 
 RUN yum -y update
-RUN yum -y install wget java-1.8.0-openjdk java-1.8.0-openjdk-devel
+RUN yum -y install perl wget java-1.8.0-openjdk java-1.8.0-openjdk-devel
 RUN cd /root
 RUN wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.44/bin/apache-tomcat-9.0.44.tar.gz
 RUN tar -xzvf apache-tomcat-9.0.44.tar.gz
