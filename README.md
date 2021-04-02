@@ -20,7 +20,7 @@ DB :  MySQL
  
  # AWS 연동된 EC2 주소(점검중 : 도커로 배포)
  
-http://ec2-3-36-238-141.ap-northeast-2.compute.amazonaws.com:8080/
+http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com
 
 # 구현 기능
 
