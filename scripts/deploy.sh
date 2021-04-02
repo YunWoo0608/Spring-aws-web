@@ -17,7 +17,7 @@ echo "> docker command start"
 sudo chmod -R 775 /var/lib/docker/volumes
 sudo docker volume create --name myvolume
 sudo docker run --privileged -d --name test2 -p 80:8080  -v myvolume:/app aws-spring-web:0.0 init
-sudo docker exec -it test2 /bin/bash -c "cp /app/*.war /usr/local/tomcat/tomcat9/webapps/ && /app/tomcat.sh"
+sudo docker exec -it test2 /bin/bash -c "cp /app/*.war /usr/local/tomcat/tomcat9/webapps/ && /bin/bash -c /app/tomcat.sh"
 
 echo "> 현재 구동중인 애플리케이션 pid 확인 "
 
