@@ -20,7 +20,7 @@ DB :  MySQL
  
  # AWS 연동된 EC2 주소(도커로 배포)
 
-http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com:8080 (톰캣)
+http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com:8080 (톰캣) <
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중)
 
 # 구현 기능
