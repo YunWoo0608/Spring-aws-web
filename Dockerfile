@@ -21,5 +21,8 @@ RUN echo -e "[Unit] \n Description=tomcat9 \n After=network.target syslog.target
 
 RUN perl -p -i -e '$.==155 and print "<Context path='"''"' docBase='"'/usr/local/tomcat/tomcat9/webapps/myapp-1.0.0-BUILD-SNAPSHOT'"' reloadable='"'true'"'/>\n"' /usr/local/tomcat/tomcat9/conf/server.xml
 
+VOLUME [ "/sys/fs/cgroup" ]
+CMD ["/usr/sbin/init"]
+
 EXPOSE 8080
 
