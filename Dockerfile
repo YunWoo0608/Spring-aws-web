@@ -42,4 +42,4 @@ RUN systemctl enable  tomcat.service
 
 
 EXPOSE 8080
-
+EXPOSE 3306
