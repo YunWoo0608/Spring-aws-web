@@ -10,7 +10,7 @@
     <meta http-equiv="X-UA_Compatible" content="IE=edge">
     <!-- 반응형 웹페이지 처리-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>mom's shopping(D_Test_6)</title>
+    <title>mom's shopping(D_Test_7)</title>
 	<!-- 아이콘 -->
 	<link rel="shortcut icon" href="#">
 	
