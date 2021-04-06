@@ -18,6 +18,9 @@ DB :  MySQL
  
  Spring 프로젝트를 travis에서 maven으로 build 해서 배포하고 외장 톰캣으로 war 파일로 실행됩니다. 해당 과정은 스크립트와 함꼐 git에 push 됨과 동시에 travis에서 build 되어 AWS s3에 배포 되고 s3에서 ec2로 다시 배포되어 ec2의 톰캣에서 실행되게 됩니다. 
  
+ # 현재 작업 상황
+ 도커 컨테이너로 웹 서비스가 실행중입니다. 클러스터링이 구성되어있고, HA-Porxy를 연결해서 로드밸런싱을 구축 중에 있습니다. 
+ 
  # AWS 연동된 EC2 주소(도커로 배포)
 
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com:8080 (톰캣) </br>
