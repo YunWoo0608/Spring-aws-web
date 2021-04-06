@@ -15,6 +15,7 @@ rm -f /lib/systemd/system/anaconda.target.wants/*;
 
 VOLUME ["/sys/fs/cgroup"]
 CMD ["/usr/sbin/init"]
+VOLUME ["/var/lib/docker/volumes/myvolume/_data/"]
 RUN mkdir -p /sys/fs/cgroup
 # =========================cgroup setting end================================
 
@@ -41,4 +42,4 @@ RUN perl -p -i -e '$.==155 and print "<Context path='"''"' docBase='"'/usr/local
 RUN systemctl enable  tomcat.service
 
 
-EXPOSE 8080 3306
+EXPOSE 8080
