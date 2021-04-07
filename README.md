@@ -21,7 +21,7 @@ DB :  MySQL
  # 현재 작업 상황
  도커 컨테이너로 웹 서비스가 실행중입니다. 클러스터링이 구성되어있고, HA-Porxy를 연결해서 로드밸런싱을 구축 중에 있습니다. 
  
- # AWS 연동된 EC2 주소(도커로 배포)
+ # AWS 연동된 EC2 주소(도커로 배포) // 04-07 현재 점검중. docker compose를 사용한 ha-proxy 구축중. 80 포트 현재 접속 불가.
 
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com:8080 (톰캣) </br>
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중)
