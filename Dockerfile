@@ -42,4 +42,4 @@ RUN perl -p -i -e '$.==155 and print "<Context path='"''"' docBase='"'/usr/local
 RUN systemctl enable  tomcat.service
 
 
-EXPOSE 8080
+#EXPOSE 8080
