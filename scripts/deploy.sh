@@ -4,7 +4,7 @@ REPOSITORY=/home/ec2-user/app/test/zip
 PROJECT_NAME=Spring-aws-web
 WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps/myapp-1.0.0-BUILD-SNAPSHOT
 CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
-DOCKERIMAGES=oinia2/aws-spring-web:0.2
+DOCKERIMAGES=oinia2/aws-spring-web:0.85
 
 echo "> Build 파일 복사 "
 
@@ -19,7 +19,7 @@ echo "> docker command start"
 sudo docker volume create --name myvolume
 sudo docker service create --name test2 -p 80:8080 --mount type=bind,source=$CONTAINERREPO,target=/app --replicas 2 $DOCKERIMAGES init
 
-#sudo docker exec test2 /bin/bash -c /app/tomcat.sh
+sudo docker exec test2 /bin/bash -c /app/tomcat.sh
 
 echo "> 현재 구동중인 애플리케이션 pid 확인 "
 
