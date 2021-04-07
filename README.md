@@ -1,6 +1,6 @@
 # Spring-aws-web (컨테이너로 배포 완료)
 
-#Travis CI 사용 
+#Travis CI 사용. 
 
 [![Build Status](https://travis-ci.com/YunWooCheoi/Spring-aws-web.svg?branch=master)](https://travis-ci.com/YunWooCheoi/Spring-aws-web)
 
