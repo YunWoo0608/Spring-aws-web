@@ -4,7 +4,7 @@ REPOSITORY=/home/ec2-user/app/test/zip
 PROJECT_NAME=Spring-aws-web
 WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps/myapp/
 CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
-DOCKERIMAGES=oinia2/aws-spring-web:0.85
+DOCKERIMAGES=oinia2/aws-spring-web:0.86
 REPLICAS_NUM=1
 
 echo "> Build 파일 복사 "
