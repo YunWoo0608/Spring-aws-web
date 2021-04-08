@@ -2,7 +2,7 @@
 
 REPOSITORY=/home/ec2-user/app/test/zip
 PROJECT_NAME=Spring-aws-web
-WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps/myapp-1.0.0-BUILD-SNAPSHOT
+WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps/myapp/
 CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
 DOCKERIMAGES=oinia2/aws-spring-web:0.85
 REPLICAS_NUM=1
