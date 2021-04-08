@@ -37,11 +37,15 @@ RUN source /root/.bash_profile
 
 RUN echo -e "[Unit] \n Description=tomcat9 \n After=network.target syslog.target \n [Service] \n Type=forking \n Environment=JAVA_HOME= /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64/jre \n User=root \n Group=root \n ExecStart=/usr/local/tomcat/tomcat9/bin/startup.sh ExecStp=/usr/local/tomcat/tomcat9/bin/shutdown.sh \n UMask=007 \n RestartSec=10 \n Restart=always \n SuccessExitStatus=143 \n [Install]\n WantedBy=multi-user.target" >> /usr/lib/systemd/system/tomcat.service
 
-RUN sudo mkdir /usr/local/tomcat/tomcat9/webapps/myapp
+RUN mkdir /usr/local/tomcat/tomcat9/webapps/myapp
 RUN perl -p -i -e '$.==155 and print "<Context path='"''"' docBase='"'/usr/local/tomcat/tomcat9/webapps/myapp'"' reloadable='"'true'"'/>\n"' /usr/local/tomcat/tomcat9/conf/server.xml
 
-RUN systemctl daemon-reload
-RUN systemctl enable  tomcat.service
-RUN systemctl restart tomcat.service
 
-#EXPOSE 8080
+RUN systemctl enable  tomcat.service
+
+VOLUME ["/sys/fs/cgroup"]
+CMD ["/usr/sbin/init"]
+VOLUME ["/var/lib/docker/volumes/myvolume/_data/"]
+RUN mkdir -p /sys/fs/cgroup
+
+
