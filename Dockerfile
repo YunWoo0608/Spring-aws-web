@@ -37,7 +37,6 @@ RUN source /root/.bash_profile
 
 RUN echo -e "[Unit] \n Description=tomcat9 \n After=network.target syslog.target \n [Service] \n Type=forking \n Environment=JAVA_HOME= /usr/lib/jvm/java-1.8.0-openjdk-1.8.0.282.b08-1.amzn2.0.1.x86_64/jre \n User=root \n Group=root \n ExecStart=/usr/local/tomcat/tomcat9/bin/startup.sh ExecStp=/usr/local/tomcat/tomcat9/bin/shutdown.sh \n UMask=007 \n RestartSec=10 \n Restart=always \n SuccessExitStatus=143 \n [Install]\n WantedBy=multi-user.target" >> /usr/lib/systemd/system/tomcat.service
 
-RUN mkdir -p /usr/local/tomcat/tomcat9/webapps/myapp-1.0.0-BUILD-SNAPSHOT
 RUN perl -p -i -e '$.==155 and print "<Context path='"''"' docBase='"'/usr/local/tomcat/tomcat9/webapps/myapp-1.0.0-BUILD-SNAPSHOT'"' reloadable='"'true'"'/>\n"' /usr/local/tomcat/tomcat9/conf/server.xml
 
 RUN systemctl enable  tomcat.service
