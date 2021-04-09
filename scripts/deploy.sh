@@ -5,8 +5,8 @@ PROJECT_NAME=Spring-aws-web
 WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps/
 CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
 DOCKERIMAGES=oinia2/aws-spring-web:0.94
-REPLICAS_NUM=1
-COMPOSE_FILE=/home/ec2-user/app/test/web3.yml
+REPLICAS_NUM=2
+COMPOSE_FILE=/home/ec2-user/app/test/zip/web3.yml
 
 
 echo "> Build 파일 복사 "
