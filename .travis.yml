@@ -13,6 +13,7 @@ cache:
 before_deploy:
   - mkdir -p before-deploy
   - cp scripts/*.sh before-deploy/
+  - cp web3.yml before-deploy/
   - cp appspec.yml before-deploy/
   - cp target/*.war before-deploy/
   - cd before-deploy && zip -r before-deploy *

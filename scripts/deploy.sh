@@ -6,7 +6,7 @@ WEBREPOSITORY=/usr/local/tomcat/tomcat9/webapps/
 CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
 DOCKERIMAGES=oinia2/aws-spring-web:0.94
 REPLICAS_NUM=1
-COMPOSE_FILE=web3.yml
+COMPOSE_FILE=/home/ec2-user/app/test/web3.yml
 
 
 echo "> Build 파일 복사 "
