@@ -13,9 +13,6 @@ echo $@
 echo ${containerIDs[0]}
 echo ${containerIDs[1]}
 
-# 볼륨 생성 
-sudo docker volume create --name myvolume
-
 # 받은 개수 만큼 for문으로 명령어 처리
 for ((i=0;i<argsNum;i++)); do
 
@@ -26,8 +23,7 @@ for ((i=0;i<argsNum;i++)); do
         sudo docker exec ${containerIDs[$i]} /bin/bash -c ${tomcatRepo}/bin/startup.sh
         sudo docker exec ${containerIDs} /bin/bash -c "echo 'namesever 8.8.8.8' >> /etc/resolve.conf"
         sudo docker exec ${containerIDs} /bin/bash -c "yum -y install net-tools"
-	# /app에 배포된 .war 파일을 웹 레포지토리로 배포.
-	sudo docker exec ${containerIDs} /bin/bash -c "cp /app/*.war /usr/local/tomcat/tomcat9/webapps/myapp/"
 
 done
+
 
