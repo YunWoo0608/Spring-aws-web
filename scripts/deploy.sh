@@ -7,7 +7,7 @@ CONTAINERREPO=/var/lib/docker/volumes/myvolume/_data/
 DOCKERIMAGES=oinia2/aws-spring-web:0.94
 COMPOSE_FILE=web.yml
 MONITOR_FILE=prometheus.yml
-APP_NAME=myapp
+APP_NAME=test
 MONITOR_NAME=pro
 
 echo "> (외장톰캣사용시)Build 파일 복사 "
@@ -18,6 +18,8 @@ echo "> 컨테이너 volume 생성 및 volume 으로 배포 "
 sudo docker volume create --name myvolume
 sudo chmod -R 775 /var/lib/docker/volumes
 sudo cp ${REPOSITORY}/*.war ${CONTAINERREPO}
+## 워커들 필수 스크립트 보내기
+sudo cp ${REPOSITORY}/excute.sh ${CONTAINERREPO}
 
 echo "> docker stack start"
 sudo docker stack deploy --compose-file=${REPOSITORY}/${COMPOSE_FILE} ${APP_NAME}
