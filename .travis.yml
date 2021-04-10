@@ -12,7 +12,7 @@ cache:
     - $HOME/.m2
 before_deploy:
   - mkdir -p before-deploy
-  - cp comose/* before-deploy/
+  - cp compose/* before-deploy/
   - cp scripts/*.sh before-deploy/
   - cp web3.yml before-deploy/
   - cp appspec.yml before-deploy/
