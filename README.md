@@ -25,6 +25,12 @@ DB :  MySQL
 
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중) [점검중] [prometheus + grafana 설정중]
 
+# 모니터링 도구 도입(Prometheus + Grafana)
+![image](https://user-images.githubusercontent.com/56060421/114266447-6d22bc00-9a31-11eb-894e-fa31f584c853.png)
+
+ * 워커 노드 중 
+![image](https://user-images.githubusercontent.com/56060421/114266577-f508c600-9a31-11eb-8e4f-3b4610b27f7d.png)
+
 구현 기능
 
 1. 로그인/로그아웃
