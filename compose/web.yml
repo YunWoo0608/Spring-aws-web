@@ -10,8 +10,6 @@ services:
       restart_policy:
         condition: on-failure
         max_attempts: 80
-    volumes:
-      - /var/lib/docker/volumes/myvolume/_data:/app
     environment:
       - SERVICE_PORTS=8080
     networks:
