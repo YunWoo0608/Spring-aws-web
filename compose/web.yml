@@ -1,0 +1,40 @@
+version: '3.7'
+
+services:
+  web:
+    image: oinia2/aws-spring-web:0.94
+    deploy:
+      replicas: 2
+      placement:
+        constraints: [node.role != manager]
+      restart_policy:
+        condition: on-failure
+        max_attempts: 80
+    volumes:
+      - /var/lib/docker/volumes/myvolume/_data:/app
+    environment:
+      - SERVICE_PORTS=8080
+    networks:
+      - test
+  
+  proxy:
+    image: dockercloud/haproxy
+    depends_on:
+      - web
+    environment:
+      - BLANACE=roundrobin
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    ports:
+      - 80:80
+    networks:
+      - test
+    deploy:
+      mode: global
+      placement:
+        constraints: [node.role == manager]
+
+
+networks:
+  test:
+    external: true
