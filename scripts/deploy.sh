@@ -20,7 +20,7 @@ sudo chmod -R 775 /var/lib/docker/volumes
 sudo cp ${REPOSITORY}/*.war ${CONTAINERREPO}
 
 echo "> docker stack start"
-sudo docker stack deploy --compose-file=${REPOSITORY}/{$COMPOSE_FILE} ${APP_NAME}
+sudo docker stack deploy --compose-file=${REPOSITORY}/${COMPOSE_FILE} ${APP_NAME}
 sudo docker stack deploy --compose-file=${REPOSITORY}/${MONITOR_NAME} ${MONITOR_NAME}
 
 #echo "> 현재 구동중인 애플리케이션 pid 확인 "
