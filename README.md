@@ -23,7 +23,7 @@ DB :  MySQL
  
  # AWS 연동된 EC2 주소(도커로 배포) // 도커 컴포즈를 통한 클러스터링으로 만들어졌으며 haproxy가 로드밸런싱.(라운드로빈방식)  
 
-http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중) [점검중]
+http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중) [점검중] [prometheus + grafana 설정중]
 
 구현 기능
 
