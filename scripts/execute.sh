@@ -18,11 +18,11 @@ for ((i=0;i<argsNum;i++)); do
 
         # 컨테이너의 웹 스크립트 제목 수정.(이걸로 워커들 판별)
         sudo docker exec ${containerIDs[$i]} /bin/bash -c ${tomcatRepo}/bin/shutdown.sh
-        sudo docker exec ${containerID} /bin/bash -c "sudo cat ${fixfile} | sudo sed s/<title>mom"'"s shopping(worker2)</title>/<title>mom"'"s shopping(${i})</title>/" > ${fixfile}
+        sudo docker exec ${containerIDs[$i]} /bin/bash -c "sudo cat ${fixfile} | sudo sed s/<title>mom"'"s shopping(worker2)</title>/<title>mom"'"s shopping(${i})</title>/" > ${fixfile}
         # 컨테이너의 톰캣 실행하기(systemd 데몬이 없기 때문에 직접 실행해야함)
         sudo docker exec ${containerIDs[$i]} /bin/bash -c ${tomcatRepo}/bin/startup.sh
-        sudo docker exec ${containerIDs} /bin/bash -c "echo 'namesever 8.8.8.8' >> /etc/resolve.conf"
-        sudo docker exec ${containerIDs} /bin/bash -c "yum -y install net-tools"
+        sudo docker exec ${containerIDs[$i]} /bin/bash -c "echo 'namesever 8.8.8.8' >> /etc/resolve.conf"
+        sudo docker exec ${containerIDs[$i]} /bin/bash -c "yum -y install net-tools"
 
 done
 
