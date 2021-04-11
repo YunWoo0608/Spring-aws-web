@@ -1,5 +1,8 @@
 # Spring-aws-web (컨테이너로 배포 완료)
 
+#prezi (해당 프로젝트 상세 설명)
+https://prezi.com/view/YAkPnBfpesaDAbv7YFzP/
+
 #Travis CI 사용. 
 
 [![Build Status](https://travis-ci.com/YunWooCheoi/Spring-aws-web.svg?branch=master)](https://travis-ci.com/YunWooCheoi/Spring-aws-web)
