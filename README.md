@@ -27,8 +27,13 @@ DB :  MySQL
  # ~ 04.08. AWS 연동된 EC2 주소(도커로 배포) // 도커 컴포즈를 통한 클러스터링으로 만들어졌으며 haproxy가 로드밸런싱.(라운드로빈방식) [완료]  
 
  # ~ 04.10 Prometheus + Grafana 구성 
+ # ~ 04.12 Grafana + Telegraf + influxdb
+![Uploading image.png…]()
+
  
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중)
+
+![image](https://user-images.githubusercontent.com/56060421/114329554-9bf87980-9b7a-11eb-93ae-95081501c493.png)
 
 # 모니터링 도구 도입(Prometheus + Grafana)
 ![image](https://user-images.githubusercontent.com/56060421/114266447-6d22bc00-9a31-11eb-894e-fa31f584c853.png)
