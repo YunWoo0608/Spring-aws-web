@@ -28,17 +28,18 @@ DB :  MySQL
 
  # ~ 04.10 Prometheus + Grafana 구성 
  # ~ 04.12 Grafana + Telegraf + influxdb
-![Uploading image.png…]()
 
- 
+
 http://ec2-3-36-28-92.ap-northeast-2.compute.amazonaws.com (docker 컨테이너 내부에서 동작중)
-
-![image](https://user-images.githubusercontent.com/56060421/114329554-9bf87980-9b7a-11eb-93ae-95081501c493.png)
 
 # 모니터링 도구 도입(Prometheus + Grafana)
 ![image](https://user-images.githubusercontent.com/56060421/114266447-6d22bc00-9a31-11eb-894e-fa31f584c853.png)
 
 ![image](https://user-images.githubusercontent.com/56060421/114266577-f508c600-9a31-11eb-8e4f-3b4610b27f7d.png)
+
+# 모니터링 도구 (Grafana + Telegraf + influxdb)
+![image](https://user-images.githubusercontent.com/56060421/114329554-9bf87980-9b7a-11eb-93ae-95081501c493.png)
+
 
 구현 기능
 
