@@ -1,4 +1,4 @@
-# Spring-aws-web (컨테이너로 배포 완료)
+# Spring-aws-web (컨테이너로 배포 완료) (서비스 중단)
 
 #prezi (해당 프로젝트 상세 설명) </br>
 https://prezi.com/view/YAkPnBfpesaDAbv7YFzP/
