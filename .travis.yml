@@ -24,7 +24,7 @@ before_deploy:
 deploy:
   - provider: s3
     access_key_id: AKIA6L54DEAOJJP74GLY
-    secret_access_key: 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
+    secret_access_key:
     bucket: spring-web-build-travis
     region: ap-northeast-2
     cleanup: true
@@ -35,7 +35,7 @@ deploy:
 
   - provider : codedeploy
     access_key_id: AKIA6L54DEAOJJP74GLY
-    secret_access_key: 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	
+    secret_access_key:
     bucket: spring-web-build-travis
     key: spring-maven-webservice.zip # travis 와 다른게 확장자 제거
     bundle_type: zip
